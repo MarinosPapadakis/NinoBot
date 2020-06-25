@@ -20,7 +20,7 @@ NinoBot is a computer bot which takes the user's microphone as input and respond
 
 Have a look at the [requirements](requirements.txt) file.
 
---
+---
 
 ## Some useful commands
 
@@ -39,7 +39,7 @@ Have a look at the [requirements](requirements.txt) file.
 
 ## Databases
 
-This project has a SQL database which contains every country that is a U.N. member state or observer and it's capital.
+This project has a SQL database which contains every country that is either a U.N. member state or an observer and it's capital.
 
 ---
 
