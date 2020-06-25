@@ -8,7 +8,7 @@ NinoBot is a computer bot which takes the user's microphone as input and respond
 
 ## How to run
 
-- Make sure you have downloaded and installed Python & pip.
+- Make sure you have downloaded and installed Python3 & pip3.
 - Download the latest version of NinoBot.
 - Open the command prompt and change directory to where you have extracted the project.
 - Download the required python libraries by typing **pip install -r requirements.txt**
