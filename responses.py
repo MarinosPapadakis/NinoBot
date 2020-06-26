@@ -26,15 +26,18 @@ def greeting():
 def typeage():
     global age
     global bot_age
-    if int(age) > int(bot_age):
-        text = f"You are {age - bot_age} years older than me!"
-        response(text)
-    elif int(age) < int(bot_age):
-        text = f"I am {bot_age - age} years older than you!"
-        response(text)
+    if age:
+        if int(age) > int(bot_age):
+            text = f"You are {age - bot_age} years older than me!"
+            response(text)
+        elif int(age) < int(bot_age):
+            text = f"I am {bot_age - age} years older than you!"
+            response(text)
+        else:
+            text = "We have exactly the same age!"
+            response(text)
     else:
-        text = "We have exactly the same age!"
-        response(text)
+        noresponse()
 
 def typename():
     global name
