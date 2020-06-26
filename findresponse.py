@@ -12,15 +12,12 @@ import webbrowser
 def findresponse(ui):
     if "hello" in ui or "hi" in ui or "hey" in ui or "yo" in ui:
         greeting()
-    elif "years" in ui and "old" and "i" in ui or "years" in ui and "old" and "i'm" in ui:
-        i = 0
-        while i < len(ui):
+    elif "years" in ui and "old" and "i" in ui or "years" in ui and "old" and "i'm" in ui or "age" in ui and "my" in ui and "is" in ui:
+        for i in range(0, len(ui)):
             try:
                 responses.age = int(''.join(itertools.takewhile(lambda s: s.isdigit(), ui[i])))
             except ValueError:
-                print("", end='')
-            i = i + 1
-        i = None
+                continue
         typeage()
     elif "capital" in ui and "of" in ui:
         connection = sqlite3.connect("db/country-capitals.db")
@@ -34,18 +31,18 @@ def findresponse(ui):
                 break
         cursor.close()
         connection.close()
-    elif "what's" and "my" in ui and "name" in ui in ui or "what" in ui and "my" in ui and "name" in ui:
+    elif "what's" in ui and "my" in ui and "name" in ui or "what" in ui and "my" in ui and "name" in ui:
         tellusername()
     elif "my" in ui and "name" in ui:
-        i = 0
-        while i < len(ui):
-            if "is" in ui[i]:
+        for i in range(0, len(ui)):
+            if "is" == ui[i]:
                 break
-            i = i + 1
-        responses.name = ui[i + 1]
-        i = None
-        typename()
-    elif "what" in ui and "age" in ui or "what's" in ui and "age" in ui or "how" in ui and "old" in ui and "are" in ui and "you" in ui:
+        try:
+            responses.name = ui[i+1]
+            typename()
+        except:
+            noresponse()
+    elif "what" in ui and "age" in ui and "my" not in ui or "what's" in ui and "age" in ui and "my" not in ui or "how" in ui and "old" in ui and "are" in ui and "you" in ui:
         howoldareyou()
     elif "how" in ui and "old" in ui and "am" in ui and "i" in ui or "what" in ui and "age" in ui or "whats" in ui and "age" in ui or "what's" in ui and "age" in ui:
         tellage()
@@ -72,12 +69,17 @@ def findresponse(ui):
     elif "thanks" in ui or "thank" in ui and "you" in ui:
         thanks()
     elif "open" in ui:
-        url = f'http://{ui[1]}'
+        for i in range(0, len(ui)):
+            if ui[i] == "open":
+                break
+        url = f'http://{ui[i+1]}'
         webbrowser.get(using=None).open_new_tab(url)
     elif "find" in ui:
-        connui = ' '.join(ui)
-        l = len(connui)
-        url = f'https://www.google.com/search?q={connui[5:l]}'
+        for i in range(0, len(ui)):
+            if ui[i] == "find":
+                break
+        connui = ' '.join(ui[(i+1):len(ui)])
+        url = f'https://www.google.com/search?q={connui}'
         webbrowser.get(using=None).open_new_tab(url)
     elif "bye" in ui or "exit" in ui:
         bye()
