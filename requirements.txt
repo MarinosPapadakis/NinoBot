@@ -2,3 +2,4 @@ SpeechRecognition==3.8.1
 gTTS==2.1.1
 playsound==1.2.2
 PyAudio==0.2.11
+simpleeval==0.9.10

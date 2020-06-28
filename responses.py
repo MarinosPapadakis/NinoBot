@@ -119,7 +119,19 @@ def thanks():
     text = "You are welcome!"
     response(text)
 
+def squareroot(n, sqrt):
+    text = f"The square root of {n} is {sqrt}"
+    response(text)
+
+def powerof(num1, num2, result):
+    text = f"{num1} raised to the power of {num2} equals {result}"
+    response(text)
+
+def domath(input, result):
+    text = f"{input} equals {result}"
+    response(text)
+
 def bye():
-    text = "Bye!"
+    text = "Goodbye!"
     response(text)
     exit()

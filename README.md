@@ -1,6 +1,6 @@
 # NinoBot
 
-**Version 1.5.0** [Change Log](CHANGELOG.md)
+**Version 2.0.0** [Change Log](CHANGELOG.md)
 
 NinoBot is a computer bot which takes the user's microphone as input and responds to many different questions with voice and text.
 
@@ -27,11 +27,17 @@ Have a look at the [requirements](requirements.txt) file.
 **What's the capital of *country name*?**
 - Will find the capital city of given country.
 
-**Open *examplewebsite.com*.**
+**Open *examplewebsite.com* **
 - Will open "examplewebsite.com" on browser.
 
-**Find *example*.**
+**Find *example* **
 - Will perform a Google search for "example".
+
+**What is the square root of *number* **
+- Will find the square root of "number".
+
+**What is *x* raised to the power of *y* **
+- Will find "x" raised to the power of "y".
 
 **And many more!**
 
