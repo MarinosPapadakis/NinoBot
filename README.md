@@ -33,7 +33,7 @@ Have a look at the [requirements](requirements.txt) file.
 **Find *example*.**
 - Will perform a Google search for "example".
 
-**What is the square root of *number* **
+**What is the square root of *number*.**
 - Will find the square root of "number".
 
 **What is *x* raised to the power of *y*.**
