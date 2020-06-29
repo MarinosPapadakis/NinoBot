@@ -1,5 +1,12 @@
 # Change log
 
+## v2.5.0 - 29, June. 2020
+
+- Added ability for bot to calculate mathematical operations with decimal numbers.
+- Fixed bugs.
+
+---
+
 ## v2.0.0 - 28, June. 2020
 
 - Added square root command.

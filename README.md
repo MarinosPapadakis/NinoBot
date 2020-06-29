@@ -1,6 +1,6 @@
 # NinoBot
 
-**Version 2.0.0** [Change Log](CHANGELOG.md)
+**Version 2.5.0** [Change Log](CHANGELOG.md)
 
 NinoBot is a computer bot which takes the user's microphone as input and responds to many different questions with voice and text.
 

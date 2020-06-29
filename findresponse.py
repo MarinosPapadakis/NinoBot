@@ -21,6 +21,14 @@ def findnumber(list):
             continue
     return number
 
+# Function to see if string is number
+def is_number(string):
+    try:
+        float(string)
+        return True
+    except ValueError:
+        return False
+
 # Function to find appropriate response
 def findresponse(ui):
     if "hello" in ui or "hi" in ui or "hey" in ui or "yo" in ui:
@@ -42,9 +50,9 @@ def findresponse(ui):
         connection.close()
     elif "what's" in ui and "my" in ui and "name" in ui or "what" in ui and "my" in ui and "name" in ui:
         tellusername()
-    elif "my" in ui and "name" in ui:
+    elif "my" in ui and "name" in ui or "my" in ui and "name's" in ui:
         for i in range(0, len(ui)):
-            if "is" == ui[i]:
+            if "is" == ui[i] or "name's" == ui[i]:
                 break
         try:
             responses.name = ui[i+1]
@@ -95,7 +103,7 @@ def findresponse(ui):
         r = []
         for i in range(0, len(ui)):
             if ui[i] not in operators:
-                if not ui[i].isnumeric():
+                if not is_number(ui[i]):
                     ui[i] = ui[i].replace(ui[i], "")
             if ui[i] != "":
                 r.append(ui[i])
