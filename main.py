@@ -2,7 +2,9 @@
 #All rights reserved.
 #This source code is licensed under the MIT License found in the LICENSE file in the root directory of this source tree.
 
-from findresponse import *
+from findresponse import findresponse
+from speak import speechrec
+from responses import response, botname
 
 # Variable to check if main has been executed before
 r = False

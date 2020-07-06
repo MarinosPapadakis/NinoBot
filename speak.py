@@ -2,8 +2,6 @@
 #All rights reserved.
 #This source code is licensed under the MIT License found in the LICENSE file in the root directory of this source tree.
 
-import itertools
-import time
 import playsound
 from gtts import gTTS
 import speech_recognition as sr
@@ -20,9 +18,7 @@ def speechrec():
             vz = vi.lower()
             print(f"Response: {vi}")
             return vz.split()
-        except sr.UnknownValueError:
-            return "restart"
-        except sr.RequestError as e:
+        except:
             return "restart"
 
 # Function for TTS

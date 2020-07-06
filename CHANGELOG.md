@@ -1,5 +1,14 @@
 # Change log
 
+## v3.0.0 - 6, July. 2020
+
+- Added "Wiki" command.
+- Added "Youtube" command.
+- Renamed "find" command to "google"
+- Fixed syntax.
+
+---
+
 ## v2.5.0 - 29, June. 2020
 
 - Added ability for bot to calculate mathematical operations with decimal numbers.

@@ -2,7 +2,8 @@
 #All rights reserved.
 #This source code is licensed under the MIT License found in the LICENSE file in the root directory of this source tree.
 
-from speak import *
+import time
+from speak import speak, speechrec
 
 # Bot's Variables
 year = time.strftime("%Y")
@@ -83,7 +84,7 @@ def whyisthat():
     response(text)
 	
 def restart():
-    text = "Sorry I couldn't quite get you"
+    text = "Sorry, I couldn't quite get that."
     response(text)
 	
 def sorry():
