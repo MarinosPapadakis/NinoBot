@@ -1,3 +1,7 @@
+#Copyright (c) 2020, Marinos Papadakis
+#All rights reserved.
+#This source code is licensed under the MIT License found in the LICENSE file in the root directory of this source tree.
+
 import itertools
 
 # Function to return number from list
