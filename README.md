@@ -51,7 +51,7 @@ Have a look at the [requirements](requirements.txt) file.
 
 ## Databases
 
-This project has a SQL database which contains every country that is either a U.N. member state or an observer and it's capital.
+This project has a SQL database which contains every country that is either a U.N. member state or an observer and it's capital. **Last updated on 29/9/2020**
 - Please note that the database may NOT be 100% correct.
 
 ---
