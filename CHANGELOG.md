@@ -1,5 +1,11 @@
 # Change log
 
+## v3.5.0 - 29, September. 2020
+
+- Database update.
+
+---
+
 ## v3.0.0 - 6, July. 2020
 
 - Added "Wiki" command.
